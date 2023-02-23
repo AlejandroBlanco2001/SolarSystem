@@ -1,12 +1,32 @@
 @import url('https://fonts.googleapis.com/css2?family=Mukta:wght@300&display=swap');
 
-$diameter : 400px;
-$radius : $diameter / 2;
+$tamaño-planetas: 20px,40px,60px,100px, 250px, 250px, 130px, 400px;
+$radio-orbita: 250px, 350px, 550px, 750px, 1050px, 1450px, 1750px, 1950px;
+
+@mixin orbit-animation($duration, $distance){
+    $name: orbit-#{unique-id()};
+
+    @keyframes #{$name} {
+        0% {
+            transform: rotate(0deg) translateX($distance) rotate(0deg);
+        }
+        100% {
+            transform: rotate(360deg) translateX($distance) rotate(-360deg);
+        }
+    }
+
+    animation: $name $duration linear infinite;
+}
+
+html{
+    zoom: 0.2;
+}
 
 body{
     background: #000;
     font-family: 'Mukta', sans-serif !important;
 }
+
 
 .galaxia{
     display: block;
@@ -20,126 +40,89 @@ body{
     height: 100vh;
 }
 
+@each $tamaño in $tamaño_planetas{
+    .planeta-#{$tamaño} {
+        position: absolute;
+        top: calc(50% - #{$tamaño/2});
+        left: calc(50% - #{$tamaño/2});
+        display: inline-block;
+        width: $tamaño;
+        height: $tamaño;
+        border-radius: 100%;    
+    }
+}
+
+@each $radio in $radio-orbita{
+    .linea-orbita-#{$radio} {
+        position: absolute;
+        top: calc(50% - #{$radio});
+        left: calc(50% - #{$radio});
+        display: inline-block;
+        width: calc($radio * 2);
+        height: calc($radio * 2);
+        border-radius: 100%;
+        border: 0.5px solid #ffffff22;
+    }
+}
+
 .sol{
     background-color: #fad05d;
-    position: absolute;
-    top: calc(50% - 200px);
-    left: calc(50% - 200px);
-    display: inline-block;
-    width: 400px;
-    height: 400px;
-    border-radius: 100%;
-    box-shadow: inset -6px 0px 10px 7px rgb(248, 167, 4), 0px 0px 15px 5px rgb(247, 185, 61);
+    box-shadow: inset -6px 0px 10px 7px rgb(248, 167, 4), 0px 0px 15px 5px #f9d16b;
 }
 
 .mercurio{
     background-color: #c7c7c7;
-    position: absolute;
-    top: calc(50% - 10px);
-    left: calc(50% - 10px);
-    z-index: 1;
-    display: inline-block;
-    width: 20px;
-    height: 20px;
-    border-radius: 100%;
     box-shadow: inset -6px 0px 10px 7px rgb(121, 121, 121), 0px 0px 15px 5px #b3b1b1;
-    transform: translateX(230px);
+    z-index: 1;
+    @include orbit-animation(2s, 250px);
 }
 
 .venus{
     background-color: #a97437;
-    position: absolute;
-    top: calc(50% - 20px);
-    left: calc(50% - 20px);
-    display: inline-block;
-    width: 40px;
-    height: 40px;
-    border-radius: 100%;
     box-shadow: inset -6px 0px 10px 7px  #8f622e, 0px 0px 15px 5px  #df9949;
+    @include orbit-animation(10s, 350px);
 }
 
 .tierra{
     background-color: #2d8b9b;
-    position: absolute;
-    top: calc(50% - 30px);
-    left: calc(50% - 30px);
-    display: inline-block;
-    width: 60px;
-    height: 60px;
-    border-radius: 100%;
     box-shadow: inset -6px 0px 10px 7px  #1f5f6f, 0px 0px 15px 5px  #3e9eb1;
+    @include orbit-animation(10s, 550px);
 
     .luna{
         background-color: #fff;
-        display: inline-block;
-        position: absolute;
-        top: calc(50% - 10px);
-        left: calc(50% - 10px);
-        width: 20px;
-        height: 20px;
-        border-radius: 100%;
         box-shadow: inset -6px 0px 10px 7px  #d1d1d1, 0px 0px 15px 5px  #fff;
+        @include orbit-animation(4s, 60px);
     }
 }
 
 .marte{
     background-color: #c43e3e;
-    position: absolute;
-    top: calc(50% - 50px);
-    left: calc(50% - 50px);
-    display: inline-block;
-    width: 100px;
-    height: 100px;
-    border-radius: 100%;
     box-shadow: inset -6px 0px 10px 7px  #a12b2b, 0px 0px 15px 5px  #d54d4d;
+    @include orbit-animation(15s, 750px);
 }
 
 .jupiter{
     background-color: #ebe0b7;
-    position: absolute;
-    top: calc(50% - 125px);
-    left: calc(50% - 125px);
-    display: inline-block;
-    width: 250px;
-    height: 250px;
-    border-radius: 100%;
     box-shadow: inset -6px 0px 10px 7px #e6d28b, 0px 0px 15px 5px  #dddacf;
+    @include orbit-animation(25s, 1050px);
 }
 
 .saturno{
     background-color: #c9a217;
-    position: absolute;
-    top: calc(50% - 125px);
-    left: calc(50% - 125px);
-    display: inline-block;
-    width: 250px;
-    height: 250px;
-    border-radius: 100%;
     box-shadow: inset -6px 0px 10px 7px  #a58513, 0px 0px 15px 5px  #b18e10;
+    @include orbit-animation(30s, 1450px);
 }
 
 .urano{
     background-color: #b0e0ec;
-    position: absolute;
-    top: calc(50% - 65px);
-    left: calc(50% - 65px);
-    display: inline-block;
-    width: 130px;
-    height: 130px;
-    border-radius: 100%;
     box-shadow: inset -6px 0px 10px 7px  rgb(116, 190, 209), 0px 0px 15px 5px  #b5e3f0;
+    @include orbit-animation(35s, 1750px);
 }
 
 .neptuno{
     background-color: #b3d4e6;
-    position: absolute;
-    top: calc(50% - 65px);
-    left: calc(50% - 65px);
-    display: inline-block;
-    width: 130px;
-    height: 130px;
-    border-radius: 100%;
     box-shadow: inset -6px 0px 10px 7px  #8fb7c9, 0px 0px 15px 5px  #c4d9e9;
+    @include orbit-animation(40s, 1950px);
 }
 
 .menu-planetas{
