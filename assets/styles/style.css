@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Mukta:wght@300&display=swap");
 html {
-  zoom: 0.2;
+  zoom: 0.23;
+  overflow: hidden;
 }
 
 body {
@@ -108,7 +109,7 @@ body {
   width: 500px;
   height: 500px;
   border-radius: 100%;
-  border: 0.5px solid rgba(255, 255, 255, 0.1333333333);
+  border: 0.5px solid rgba(255, 255, 255, 0.1882352941);
 }
 
 .linea-orbita-350px {
@@ -119,7 +120,7 @@ body {
   width: 700px;
   height: 700px;
   border-radius: 100%;
-  border: 0.5px solid rgba(255, 255, 255, 0.1333333333);
+  border: 0.5px solid rgba(255, 255, 255, 0.1882352941);
 }
 
 .linea-orbita-550px {
@@ -130,7 +131,7 @@ body {
   width: 1100px;
   height: 1100px;
   border-radius: 100%;
-  border: 0.5px solid rgba(255, 255, 255, 0.1333333333);
+  border: 0.5px solid rgba(255, 255, 255, 0.1882352941);
 }
 
 .linea-orbita-750px {
@@ -141,7 +142,7 @@ body {
   width: 1500px;
   height: 1500px;
   border-radius: 100%;
-  border: 0.5px solid rgba(255, 255, 255, 0.1333333333);
+  border: 0.5px solid rgba(255, 255, 255, 0.1882352941);
 }
 
 .linea-orbita-1050px {
@@ -152,7 +153,7 @@ body {
   width: 2100px;
   height: 2100px;
   border-radius: 100%;
-  border: 0.5px solid rgba(255, 255, 255, 0.1333333333);
+  border: 0.5px solid rgba(255, 255, 255, 0.1882352941);
 }
 
 .linea-orbita-1450px {
@@ -163,7 +164,7 @@ body {
   width: 2900px;
   height: 2900px;
   border-radius: 100%;
-  border: 0.5px solid rgba(255, 255, 255, 0.1333333333);
+  border: 0.5px solid rgba(255, 255, 255, 0.1882352941);
 }
 
 .linea-orbita-1750px {
@@ -174,7 +175,7 @@ body {
   width: 3500px;
   height: 3500px;
   border-radius: 100%;
-  border: 0.5px solid rgba(255, 255, 255, 0.1333333333);
+  border: 0.5px solid rgba(255, 255, 255, 0.1882352941);
 }
 
 .linea-orbita-1950px {
@@ -185,7 +186,515 @@ body {
   width: 3900px;
   height: 3900px;
   border-radius: 100%;
-  border: 0.5px solid rgba(255, 255, 255, 0.1333333333);
+  border: 0.5px solid rgba(255, 255, 255, 0.1882352941);
+}
+
+.star:nth-child(1) {
+  top: 63vh;
+  left: 437vw;
+}
+
+.star:nth-child(2) {
+  top: 354vh;
+  left: 180vw;
+}
+
+.star:nth-child(3) {
+  top: 124vh;
+  left: 235vw;
+}
+
+.star:nth-child(4) {
+  top: 178vh;
+  left: 47vw;
+}
+
+.star:nth-child(5) {
+  top: 6vh;
+  left: 192vw;
+}
+
+.star:nth-child(6) {
+  top: 460vh;
+  left: 113vw;
+}
+
+.star:nth-child(7) {
+  top: 13vh;
+  left: 450vw;
+}
+
+.star:nth-child(8) {
+  top: 22vh;
+  left: 276vw;
+}
+
+.star:nth-child(9) {
+  top: 264vh;
+  left: 285vw;
+}
+
+.star:nth-child(10) {
+  top: 131vh;
+  left: 197vw;
+}
+
+.star:nth-child(11) {
+  top: 7vh;
+  left: 32vw;
+}
+
+.star:nth-child(12) {
+  top: 326vh;
+  left: 208vw;
+}
+
+.star:nth-child(13) {
+  top: 148vh;
+  left: 450vw;
+}
+
+.star:nth-child(14) {
+  top: 308vh;
+  left: 67vw;
+}
+
+.star:nth-child(15) {
+  top: 76vh;
+  left: 474vw;
+}
+
+.star:nth-child(16) {
+  top: 180vh;
+  left: 27vw;
+}
+
+.star:nth-child(17) {
+  top: 1vh;
+  left: 435vw;
+}
+
+.star:nth-child(18) {
+  top: 477vh;
+  left: 493vw;
+}
+
+.star:nth-child(19) {
+  top: 141vh;
+  left: 437vw;
+}
+
+.star:nth-child(20) {
+  top: 407vh;
+  left: 134vw;
+}
+
+.star:nth-child(21) {
+  top: 402vh;
+  left: 406vw;
+}
+
+.star:nth-child(22) {
+  top: 4vh;
+  left: 41vw;
+}
+
+.star:nth-child(23) {
+  top: 41vh;
+  left: 260vw;
+}
+
+.star:nth-child(24) {
+  top: 238vh;
+  left: 320vw;
+}
+
+.star:nth-child(25) {
+  top: 125vh;
+  left: 110vw;
+}
+
+.star:nth-child(26) {
+  top: 136vh;
+  left: 106vw;
+}
+
+.star:nth-child(27) {
+  top: 344vh;
+  left: 241vw;
+}
+
+.star:nth-child(28) {
+  top: 37vh;
+  left: 169vw;
+}
+
+.star:nth-child(29) {
+  top: 336vh;
+  left: 28vw;
+}
+
+.star:nth-child(30) {
+  top: 1vh;
+  left: 49vw;
+}
+
+.star:nth-child(31) {
+  top: 447vh;
+  left: 382vw;
+}
+
+.star:nth-child(32) {
+  top: 351vh;
+  left: 151vw;
+}
+
+.star:nth-child(33) {
+  top: 429vh;
+  left: 239vw;
+}
+
+.star:nth-child(34) {
+  top: 180vh;
+  left: 212vw;
+}
+
+.star:nth-child(35) {
+  top: 338vh;
+  left: 416vw;
+}
+
+.star:nth-child(36) {
+  top: 161vh;
+  left: 249vw;
+}
+
+.star:nth-child(37) {
+  top: 163vh;
+  left: 278vw;
+}
+
+.star:nth-child(38) {
+  top: 73vh;
+  left: 14vw;
+}
+
+.star:nth-child(39) {
+  top: 296vh;
+  left: 492vw;
+}
+
+.star:nth-child(40) {
+  top: 117vh;
+  left: 485vw;
+}
+
+.star:nth-child(41) {
+  top: 148vh;
+  left: 346vw;
+}
+
+.star:nth-child(42) {
+  top: 465vh;
+  left: 184vw;
+}
+
+.star:nth-child(43) {
+  top: 370vh;
+  left: 88vw;
+}
+
+.star:nth-child(44) {
+  top: 120vh;
+  left: 80vw;
+}
+
+.star:nth-child(45) {
+  top: 111vh;
+  left: 217vw;
+}
+
+.star:nth-child(46) {
+  top: 30vh;
+  left: 422vw;
+}
+
+.star:nth-child(47) {
+  top: 437vh;
+  left: 278vw;
+}
+
+.star:nth-child(48) {
+  top: 399vh;
+  left: 311vw;
+}
+
+.star:nth-child(49) {
+  top: 151vh;
+  left: 335vw;
+}
+
+.star:nth-child(50) {
+  top: 436vh;
+  left: 375vw;
+}
+
+.star:nth-child(51) {
+  top: 174vh;
+  left: 375vw;
+}
+
+.star:nth-child(52) {
+  top: 486vh;
+  left: 301vw;
+}
+
+.star:nth-child(53) {
+  top: 416vh;
+  left: 491vw;
+}
+
+.star:nth-child(54) {
+  top: 473vh;
+  left: 331vw;
+}
+
+.star:nth-child(55) {
+  top: 374vh;
+  left: 229vw;
+}
+
+.star:nth-child(56) {
+  top: 179vh;
+  left: 206vw;
+}
+
+.star:nth-child(57) {
+  top: 330vh;
+  left: 413vw;
+}
+
+.star:nth-child(58) {
+  top: 309vh;
+  left: 434vw;
+}
+
+.star:nth-child(59) {
+  top: 277vh;
+  left: 163vw;
+}
+
+.star:nth-child(60) {
+  top: 328vh;
+  left: 56vw;
+}
+
+.star:nth-child(61) {
+  top: 286vh;
+  left: 405vw;
+}
+
+.star:nth-child(62) {
+  top: 120vh;
+  left: 82vw;
+}
+
+.star:nth-child(63) {
+  top: 62vh;
+  left: 193vw;
+}
+
+.star:nth-child(64) {
+  top: 94vh;
+  left: 458vw;
+}
+
+.star:nth-child(65) {
+  top: 438vh;
+  left: 225vw;
+}
+
+.star:nth-child(66) {
+  top: 436vh;
+  left: 429vw;
+}
+
+.star:nth-child(67) {
+  top: 303vh;
+  left: 237vw;
+}
+
+.star:nth-child(68) {
+  top: 33vh;
+  left: 299vw;
+}
+
+.star:nth-child(69) {
+  top: 370vh;
+  left: 226vw;
+}
+
+.star:nth-child(70) {
+  top: 386vh;
+  left: 124vw;
+}
+
+.star:nth-child(71) {
+  top: 246vh;
+  left: 228vw;
+}
+
+.star:nth-child(72) {
+  top: 500vh;
+  left: 163vw;
+}
+
+.star:nth-child(73) {
+  top: 168vh;
+  left: 158vw;
+}
+
+.star:nth-child(74) {
+  top: 433vh;
+  left: 410vw;
+}
+
+.star:nth-child(75) {
+  top: 361vh;
+  left: 479vw;
+}
+
+.star:nth-child(76) {
+  top: 81vh;
+  left: 344vw;
+}
+
+.star:nth-child(77) {
+  top: 213vh;
+  left: 311vw;
+}
+
+.star:nth-child(78) {
+  top: 407vh;
+  left: 313vw;
+}
+
+.star:nth-child(79) {
+  top: 495vh;
+  left: 443vw;
+}
+
+.star:nth-child(80) {
+  top: 264vh;
+  left: 63vw;
+}
+
+.star:nth-child(81) {
+  top: 337vh;
+  left: 11vw;
+}
+
+.star:nth-child(82) {
+  top: 343vh;
+  left: 484vw;
+}
+
+.star:nth-child(83) {
+  top: 455vh;
+  left: 411vw;
+}
+
+.star:nth-child(84) {
+  top: 125vh;
+  left: 388vw;
+}
+
+.star:nth-child(85) {
+  top: 77vh;
+  left: 33vw;
+}
+
+.star:nth-child(86) {
+  top: 326vh;
+  left: 219vw;
+}
+
+.star:nth-child(87) {
+  top: 468vh;
+  left: 484vw;
+}
+
+.star:nth-child(88) {
+  top: 356vh;
+  left: 127vw;
+}
+
+.star:nth-child(89) {
+  top: 67vh;
+  left: 343vw;
+}
+
+.star:nth-child(90) {
+  top: 312vh;
+  left: 338vw;
+}
+
+.star:nth-child(91) {
+  top: 347vh;
+  left: 409vw;
+}
+
+.star:nth-child(92) {
+  top: 89vh;
+  left: 35vw;
+}
+
+.star:nth-child(93) {
+  top: 89vh;
+  left: 92vw;
+}
+
+.star:nth-child(94) {
+  top: 78vh;
+  left: 308vw;
+}
+
+.star:nth-child(95) {
+  top: 476vh;
+  left: 25vw;
+}
+
+.star:nth-child(96) {
+  top: 9vh;
+  left: 81vw;
+}
+
+.star:nth-child(97) {
+  top: 246vh;
+  left: 392vw;
+}
+
+.star:nth-child(98) {
+  top: 331vh;
+  left: 152vw;
+}
+
+.star:nth-child(99) {
+  top: 124vh;
+  left: 185vw;
+}
+
+.star:nth-child(100) {
+  top: 317vh;
+  left: 433vw;
+}
+
+.star {
+  background-color: #fff;
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  box-shadow: inset -6px 0px 10px 7px #e6e6e6, 0px 0px 15px 5px #fff;
 }
 
 .sol {
@@ -197,9 +706,9 @@ body {
   background-color: #c7c7c7;
   box-shadow: inset -6px 0px 10px 7px rgb(121, 121, 121), 0px 0px 15px 5px #b3b1b1;
   z-index: 1;
-  animation: orbit-u39murp 2s linear infinite;
+  animation: orbit-u39n0wm 0.438611065s linear infinite;
 }
-@keyframes orbit-u39murp {
+@keyframes orbit-u39n0wm {
   0% {
     transform: rotate(0deg) translateX(250px) rotate(0deg);
   }
@@ -211,9 +720,9 @@ body {
 .venus {
   background-color: #a97437;
   box-shadow: inset -6px 0px 10px 7px #8f622e, 0px 0px 15px 5px #df9949;
-  animation: orbit-u39mus9 10s linear infinite;
+  animation: orbit-u39n0xl 1.1214487456s linear infinite;
 }
-@keyframes orbit-u39mus9 {
+@keyframes orbit-u39n0xl {
   0% {
     transform: rotate(0deg) translateX(350px) rotate(0deg);
   }
@@ -225,9 +734,9 @@ body {
 .tierra {
   background-color: #2d8b9b;
   box-shadow: inset -6px 0px 10px 7px #1f5f6f, 0px 0px 15px 5px #3e9eb1;
-  animation: orbit-u39mut8 10s linear infinite;
+  animation: orbit-u39n0yh 1.8192390763s linear infinite;
 }
-@keyframes orbit-u39mut8 {
+@keyframes orbit-u39n0yh {
   0% {
     transform: rotate(0deg) translateX(550px) rotate(0deg);
   }
@@ -238,9 +747,9 @@ body {
 .tierra .luna {
   background-color: #fff;
   box-shadow: inset -6px 0px 10px 7px #d1d1d1, 0px 0px 15px 5px #fff;
-  animation: orbit-u39muty 4s linear infinite;
+  animation: orbit-u39n0ze 0.1445422828s linear infinite;
 }
-@keyframes orbit-u39muty {
+@keyframes orbit-u39n0ze {
   0% {
     transform: rotate(0deg) translateX(60px) rotate(0deg);
   }
@@ -252,9 +761,9 @@ body {
 .marte {
   background-color: #c43e3e;
   box-shadow: inset -6px 0px 10px 7px #a12b2b, 0px 0px 15px 5px #d54d4d;
-  animation: orbit-u39muuw 15s linear infinite;
+  animation: orbit-u39n0zr 3.4241568367s linear infinite;
 }
-@keyframes orbit-u39muuw {
+@keyframes orbit-u39n0zr {
   0% {
     transform: rotate(0deg) translateX(750px) rotate(0deg);
   }
@@ -266,9 +775,9 @@ body {
 .jupiter {
   background-color: #ebe0b7;
   box-shadow: inset -6px 0px 10px 7px #e6d28b, 0px 0px 15px 5px #dddacf;
-  animation: orbit-u39muvs 25s linear infinite;
+  animation: orbit-u39n108 21.5966107327s linear infinite;
 }
-@keyframes orbit-u39muvs {
+@keyframes orbit-u39n108 {
   0% {
     transform: rotate(0deg) translateX(1050px) rotate(0deg);
   }
@@ -280,9 +789,9 @@ body {
 .saturno {
   background-color: #c9a217;
   box-shadow: inset -6px 0px 10px 7px #a58513, 0px 0px 15px 5px #b18e10;
-  animation: orbit-u39muwk 30s linear infinite;
+  animation: orbit-u39n111 53.6251869081s linear infinite;
 }
-@keyframes orbit-u39muwk {
+@keyframes orbit-u39n111 {
   0% {
     transform: rotate(0deg) translateX(1450px) rotate(0deg);
   }
@@ -294,9 +803,9 @@ body {
 .urano {
   background-color: #b0e0ec;
   box-shadow: inset -6px 0px 10px 7px rgb(116, 190, 209), 0px 0px 15px 5px #b5e3f0;
-  animation: orbit-u39muwt 35s linear infinite;
+  animation: orbit-u39n11j 152.9506562552s linear infinite;
 }
-@keyframes orbit-u39muwt {
+@keyframes orbit-u39n11j {
   0% {
     transform: rotate(0deg) translateX(1750px) rotate(0deg);
   }
@@ -308,25 +817,15 @@ body {
 .neptuno {
   background-color: #b3d4e6;
   box-shadow: inset -6px 0px 10px 7px #8fb7c9, 0px 0px 15px 5px #c4d9e9;
-  animation: orbit-u39muxp 40s linear infinite;
+  animation: orbit-u39n11r 300s linear infinite;
 }
-@keyframes orbit-u39muxp {
+@keyframes orbit-u39n11r {
   0% {
     transform: rotate(0deg) translateX(1950px) rotate(0deg);
   }
   100% {
     transform: rotate(360deg) translateX(1950px) rotate(-360deg);
   }
-}
-
-.menu-planetas {
-  color: white;
-}
-.menu-planetas li {
-  list-style: none;
-  display: inline-block;
-  margin: 0 10px;
-  cursor: pointer;
 }
 
 /*# sourceMappingURL=style.css.map */

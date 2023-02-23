@@ -19,7 +19,8 @@ $radio-orbita: 250px, 350px, 550px, 750px, 1050px, 1450px, 1750px, 1950px;
 }
 
 html{
-    zoom: 0.2;
+    zoom: 0.23;
+    overflow: hidden;
 }
 
 body{
@@ -61,8 +62,24 @@ body{
         width: calc($radio * 2);
         height: calc($radio * 2);
         border-radius: 100%;
-        border: 0.5px solid #ffffff22;
+        border: 0.5px solid #ffffff30;
     }
+}
+
+
+@for $i from 1 through 100{
+    .star:nth-child(#{$i}){
+        top: random(500) + vh;
+        left: random(500) + vw;
+    }
+}
+
+.star{
+    background-color: #fff;
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    box-shadow: inset -6px 0px 10px 7px #e6e6e6, 0px 0px 15px 5px #fff;
 }
 
 .sol{
@@ -74,64 +91,53 @@ body{
     background-color: #c7c7c7;
     box-shadow: inset -6px 0px 10px 7px rgb(121, 121, 121), 0px 0px 15px 5px #b3b1b1;
     z-index: 1;
-    @include orbit-animation(2s, 250px);
+    @include orbit-animation(#{calc(88*300/60190)}s, 250px);
 }
 
 .venus{
     background-color: #a97437;
     box-shadow: inset -6px 0px 10px 7px  #8f622e, 0px 0px 15px 5px  #df9949;
-    @include orbit-animation(10s, 350px);
+    @include orbit-animation(#{calc(225*300/60190)}s, 350px);
 }
 
 .tierra{
     background-color: #2d8b9b;
     box-shadow: inset -6px 0px 10px 7px  #1f5f6f, 0px 0px 15px 5px  #3e9eb1;
-    @include orbit-animation(10s, 550px);
+    @include orbit-animation(#{calc(365*300/60190)}s, 550px);
 
     .luna{
         background-color: #fff;
         box-shadow: inset -6px 0px 10px 7px  #d1d1d1, 0px 0px 15px 5px  #fff;
-        @include orbit-animation(4s, 60px);
+        @include orbit-animation(#{calc(29*300/60190)}s, 60px);
     }
 }
 
 .marte{
     background-color: #c43e3e;
     box-shadow: inset -6px 0px 10px 7px  #a12b2b, 0px 0px 15px 5px  #d54d4d;
-    @include orbit-animation(15s, 750px);
+    @include orbit-animation(#{calc(687*300/60190)}s, 750px);
 }
 
 .jupiter{
     background-color: #ebe0b7;
     box-shadow: inset -6px 0px 10px 7px #e6d28b, 0px 0px 15px 5px  #dddacf;
-    @include orbit-animation(25s, 1050px);
+    @include orbit-animation(#{calc(4333*300/60190)}s, 1050px);
 }
 
 .saturno{
     background-color: #c9a217;
     box-shadow: inset -6px 0px 10px 7px  #a58513, 0px 0px 15px 5px  #b18e10;
-    @include orbit-animation(30s, 1450px);
+    @include orbit-animation(#{calc(10759*300/60190)}s, 1450px);
 }
 
 .urano{
     background-color: #b0e0ec;
     box-shadow: inset -6px 0px 10px 7px  rgb(116, 190, 209), 0px 0px 15px 5px  #b5e3f0;
-    @include orbit-animation(35s, 1750px);
+    @include orbit-animation(#{calc(30687*300/60190)}s, 1750px);
 }
 
 .neptuno{
     background-color: #b3d4e6;
     box-shadow: inset -6px 0px 10px 7px  #8fb7c9, 0px 0px 15px 5px  #c4d9e9;
-    @include orbit-animation(40s, 1950px);
-}
-
-.menu-planetas{
-    color: white;
-
-    li{
-        list-style: none;
-        display: inline-block;
-        margin: 0 10px;
-        cursor: pointer;
-    }
+    @include orbit-animation(300s, 1950px);
 }
